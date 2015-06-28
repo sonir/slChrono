@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <sys/time.h>
 
@@ -19,6 +21,7 @@ public:
     void setStartTime(timeval *t);
     chrono_t elapsed();
     chrono_t elapsed(chrono_t t1,chrono_t t2);
+    chrono_t elapsed_ms();
     
     chrono_t st_time, now;
     

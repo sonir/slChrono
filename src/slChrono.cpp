@@ -70,6 +70,13 @@ chrono_t slChrono::elapsed(chrono_t t1,chrono_t t2){
     
 }
 
+chrono_t slChrono::elapsed_ms(){
+    
+    return elapsed()*0.001;
+    
+}
+
+
 chrono_t slChrono::convertToChrono(timeval *t){
     getTime(t);
     sec = t->tv_sec; usec = t->tv_usec;
